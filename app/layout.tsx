@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { ClerkProvider, SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  Show,
+  UserButton,
+} from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import "./globals.css";
 
@@ -16,7 +22,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "LinkSnip — URL Shortener",
-  description: "Create short, memorable links in seconds. Track clicks and manage all your URLs from one dashboard.",
+  description:
+    "Create short, memorable links in seconds. Track clicks and manage all your URLs from one dashboard.",
 };
 
 export default function RootLayout({

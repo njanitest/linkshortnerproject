@@ -1,4 +1,3 @@
-
 # Agent Instructions — Link Shortener Project
 
 This is a URL shortener built with the Next.js App Router, Clerk auth, Neon Postgres via Drizzle ORM, and Tailwind v4 + shadcn/base-ui components.
