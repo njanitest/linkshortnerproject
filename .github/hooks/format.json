@@ -5,7 +5,7 @@
       {
         "type": "command",
         "bash": "npx prettier --write .",
-        "powershell": "npx prettier --write .",
+        "powershell": "& .\\.github\\hooks\\format.ps1",
         "timeoutSec": 60
       }
     ]
