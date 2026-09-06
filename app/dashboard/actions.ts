@@ -19,7 +19,19 @@ const shortCodeSchema = z
   .max(30, "Must be at most 30 characters");
 
 const createLinkSchema = z.object({
-  url: z.string().trim().min(1, "URL is required").url("Enter a valid URL"),
+  url: z
+    .string()
+    .trim()
+    .min(1, "URL is required")
+    .max(2048, "URL must be at most 2048 characters")
+    .url("Enter a valid URL")
+    .refine(
+      (value) => {
+        const protocol = new URL(value).protocol;
+        return protocol === "http:" || protocol === "https:";
+      },
+      { message: "Only http and https URLs are allowed" }
+    ),
   customCode: shortCodeSchema.optional().or(z.literal("")),
 });
 
@@ -59,7 +71,19 @@ export async function createLinkAction(input: CreateLinkInput) {
 
 const updateLinkSchema = z.object({
   id: z.number(),
-  url: z.string().trim().min(1, "URL is required").url("Enter a valid URL"),
+  url: z
+    .string()
+    .trim()
+    .min(1, "URL is required")
+    .max(2048, "URL must be at most 2048 characters")
+    .url("Enter a valid URL")
+    .refine(
+      (value) => {
+        const protocol = new URL(value).protocol;
+        return protocol === "http:" || protocol === "https:";
+      },
+      { message: "Only http and https URLs are allowed" }
+    ),
   customCode: shortCodeSchema,
 });
 
