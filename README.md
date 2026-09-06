@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Built by AI
+
+This project is built entirely through AI instructions, prompts, and skills — no hand-written implementation code. All security vulnerabilities are checked via AI instructions and resolved by AI subagents, and all file formatting is enforced by AI-driven GitHub hooks.
+
 ## Getting Started
 
 First, run the development server:
@@ -19,6 +23,38 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Screenshots
+
+### Home page
+
+Landing page introducing the URL shortener, with a call to action to get started.
+
+![Home page](screenshots/home_page.jpg)
+
+### Dashboard
+
+The "My Links" dashboard listing a user's shortened links with edit and delete actions.
+
+![Dashboard](screenshots/dashboard.jpg)
+
+### Create a short link
+
+Dialog for shortening a new URL, with an optional custom short code.
+
+![Add short link](screenshots/add_short_link.png)
+
+### Edit a short link
+
+Dialog for updating the destination URL or short code of an existing link.
+
+![Edit short link](screenshots/edit_shorter_link.jpg)
+
+### Delete a short link
+
+Confirmation dialog before permanently deleting a short link.
+
+![Delete short link](screenshots/Delete_shortned_link.png)
 
 ## Learn More
 

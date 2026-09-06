@@ -8,7 +8,7 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Link2, BarChart2, FolderOpen, ShieldCheck } from "lucide-react";
+import { Link2, FolderOpen, ShieldCheck } from "lucide-react";
 
 const features = [
   {
@@ -16,12 +16,6 @@ const features = [
     title: "Shorten Any URL",
     description:
       "Transform long, unwieldy links into clean, shareable short URLs in seconds.",
-  },
-  {
-    icon: BarChart2,
-    title: "Track Click Analytics",
-    description:
-      "Monitor how your links perform with real-time click counts and usage insights.",
   },
   {
     icon: FolderOpen,
@@ -57,8 +51,8 @@ export default async function Home() {
             Short links, big impact
           </h1>
           <p className="max-w-lg text-base text-muted-foreground sm:text-lg">
-            Create concise, memorable links in one click. Track performance,
-            manage your collection, and share with confidence.
+            Create concise, memorable links in one click. Manage your collection
+            and share with confidence.
           </p>
         </div>
         <div className="flex flex-col items-center gap-3 sm:flex-row">
@@ -81,7 +75,7 @@ export default async function Home() {
               Simple, powerful tools that help you share smarter.
             </p>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {features.map(({ icon: Icon, title, description }) => (
               <Card key={title}>
                 <CardHeader>

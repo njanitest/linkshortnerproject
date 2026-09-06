@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "type": "command",
+        "bash": "npx prettier --write .",
+        "powershell": "& .\\.github\\hooks\\format.ps1",
+        "timeoutSec": 60
+      }
+    ]
+  }
+}
