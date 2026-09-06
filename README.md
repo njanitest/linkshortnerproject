@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Built by AI
+
+This project is built entirely through AI instructions, prompts, and skills — no hand-written implementation code. All security vulnerabilities are checked via AI instructions and resolved by AI subagents, and all file formatting is enforced by AI-driven GitHub hooks.
+
 ## Getting Started
 
 First, run the development server:
