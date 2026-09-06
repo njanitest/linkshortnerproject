@@ -24,6 +24,38 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Screenshots
+
+### Home page
+
+Landing page introducing the URL shortener, with a call to action to get started.
+
+![Home page](screenshots/home_page.jpg)
+
+### Dashboard
+
+The "My Links" dashboard listing a user's shortened links with edit and delete actions.
+
+![Dashboard](screenshots/dashboard.jpg)
+
+### Create a short link
+
+Dialog for shortening a new URL, with an optional custom short code.
+
+![Add short link](screenshots/add_short_link.png)
+
+### Edit a short link
+
+Dialog for updating the destination URL or short code of an existing link.
+
+![Edit short link](screenshots/edit_shorter_link.jpg)
+
+### Delete a short link
+
+Confirmation dialog before permanently deleting a short link.
+
+![Delete short link](screenshots/Delete_shortned_link.png)
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
