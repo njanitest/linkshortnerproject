@@ -1,12 +1,12 @@
-{
-  "version": 1,
-  "hooks": {
-    "postToolUse": [
-      {
-        "type": "command",
-        "bash": "mkdir -p tmp && cat > \"tmp/$(date +%Y%m%d%H%M%S%3N).json\"",
-        "powershell": "$timestamp = Get-Date -Format 'yyyyMMddHHmmssfff'; New-Item -ItemType Directory -Force tmp | Out-Null; Remove-Item Alias:cat; function cat { [Console]::In.ReadToEnd() }; cat | Set-Content -NoNewline -Encoding utf8 \"tmp\\$timestamp.json\""
-      }
-    ]
-  }
-}
+// {
+//   "version": 1,
+//   "hooks": {
+//     "postToolUse": [
+//       {
+//         "type": "command",
+//         "bash": "mkdir -p tmp && cat > \"tmp/$(date +%Y%m%d%H%M%S%3N).json\"",
+//         "powershell": "$timestamp = Get-Date -Format 'yyyyMMddHHmmssfff'; New-Item -ItemType Directory -Force tmp | Out-Null; Remove-Item Alias:cat; function cat { [Console]::In.ReadToEnd() }; cat | Set-Content -NoNewline -Encoding utf8 \"tmp\\$timestamp.json\""
+//       }
+//     ]
+//   }
+// }
