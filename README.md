@@ -4,6 +4,7 @@
 This project is built entirely through AI instructions, prompts, and skills — no hand-written implementation code. All security vulnerabilities are checked via AI instructions and resolved by AI subagents, and all file formatting is enforced by AI-driven GitHub hooks.
 
 - Used Neon MCP to connect to the Neon database to migrate data from the local database to the Neon database.
+- Created a [`design-diagram-generator`](.agents/skills/design-diagram-generator/SKILL.md) skill that generates Mermaid design diagrams (flowchart, sequence, ER, class, state, or architecture) for a task or for the whole project, grounded in the actual code. It was used to produce the project architecture diagrams in [docs/diagrams](docs/diagrams).
 
 ## Getting Started
 
